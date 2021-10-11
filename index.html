@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuadrado magico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="cuadrado.css" />
+    <script src="scripts/main.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="container container-nav">
+        <div>
+          <h1>Teoría de números</h1>
+          <p>Universidad Distrital Francisco José de Caldas</p>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="#">Congruencia</a></li>
+            <li><a href="#">Calendario</a></li>
+            <li><a href="#">Divisibilidad</a></li>
+            <li><a href="#">Cuadrado magico</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section>
+        <form id="formCuadradoMagico">
+          <div class="tamanio-text">
+            <label for="numeroFilas">Tamaño del cuadrado:</label>
+            <input
+              id="inputTamanio"
+              type="number"
+              name="numeroFilas"
+              min="3"
+              value="3"
+              max="141"
+              step="2"
+              placeholder="Ingrese el valor de n"
+            />
+            <input type="submit" value="Generar cuadrado mágico" />
+          </div>
+        </form>
+      </section>
+
+      <section class="container-cuadrado">
+        <div id="cuadrado-magico"></div>
+
+        <details>
+          <summary>Detalles</summary>
+          <p class="suma-magica"> </p>
+        </details>
+      </section>
+    </main>
+  </body>
+</html>
